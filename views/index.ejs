@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <title><%= title %></title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <form action="/authenticated" method="post">
+            <div id="wrapper">
+                <div id="left">
+                    <label for="password">Password:</label>
+                </div>
+                <div id="right">
+                    <input type="text" id="password" name="password" size="75" />
+                </div>
+            </div>
+            <input type="submit" value="Get some!" style="margin-top: 5px" />
+        </form>
+    </body>
+</html>
