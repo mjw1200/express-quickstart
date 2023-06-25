@@ -7,7 +7,7 @@ router.get("/", function (req, res, next) {
 
 router.post("/authenticated", function (req, res, next) {
     console.log(`BLAM! ${JSON.stringify(req.body)}`);
-    res.render("authenticated", { title: "Now You're Authenticated", password: req.body.password });
+    res.render("authenticated", { title: "Now You're Authenticated", password: req.body.password, username: req.body.username });
 });
 
 module.exports = router;

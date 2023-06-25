@@ -20,7 +20,7 @@ div#wrapper {
     overflow: hidden; /* add this to contain floated children */
 }
 div#left {
-    width: 16%;
+    width: 5%;
     margin-right: 5px;
     float: left;
 }
