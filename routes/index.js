@@ -12,7 +12,7 @@ router.post("/authenticated", function (req, res, next) {
         console.log(data);
         res.render("authenticated", { title: "Now You're Authenticated", password: req.body.password, username: req.body.username });
     }).catch(error => {
-        res.status(400).send("<!DOCTYPE html><html><head><title>There Was Trouble</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Ruh-roh, Raggy</h1><p>Aroo?</p></body></html>")
+        res.status(400).render("trouble", { title: "There Was Trouble" });
     });
 });
 
@@ -27,7 +27,7 @@ async function axiosRequest() {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://ruthisaschmoo.net:3000',
+            url: 'http://ruthisaschmoe.net:3000',
             headers: {
                 'Content-Type': 'application/json'
             },
