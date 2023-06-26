@@ -27,7 +27,7 @@ async function axiosRequest() {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://ruthisaschmoe.net:3000',
+            url: 'http://ruthisaschmoo.net:3000',
             headers: {
                 'Content-Type': 'application/json'
             },
